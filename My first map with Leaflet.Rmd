@@ -19,6 +19,4 @@ my_map <- leaflet() %>%
 my_map %>%
    addMarkers(lat = 52.067821, lng = 5.170749,
               popup = c("Codrin's favourite coffee house <br /> <a href='http://www.veldkeuken.nl/'>De Veldkeuken</a>"))
-
-my_map
 ```
