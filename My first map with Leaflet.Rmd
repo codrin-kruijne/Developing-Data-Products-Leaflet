@@ -1,0 +1,24 @@
+---
+title: "My first map"
+author: "Codrin Kruijne"
+date: "16 April 2018"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## My first map with Leaflet
+
+```{r}
+library(leaflet)
+my_map <- leaflet() %>%
+   addTiles()
+
+my_map %>%
+   addMarkers(lat = 52.067821, lng = 5.170749,
+              popup = c("Codrin's favourite coffee house <br /> <a href='http://www.veldkeuken.nl/'>De Veldkeuken</a>"))
+
+my_map
+```
